@@ -37,6 +37,13 @@
   }
 }
 
+.title-box{
+  background-color: rgb(234, 179, 243);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
 .district{
   background-color: darkcyan;
   padding: 20px;
