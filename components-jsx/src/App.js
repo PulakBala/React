@@ -6,7 +6,8 @@ function App() {
     {name: 'laptop', price:143200},
     {name: 'phone', price:13200},
     {name: 'watch', price:43200},
-    {name: 'tablet', price:14200}
+    {name: 'tablet', price:14200},
+    {name: 'Radio', price: 1000}
 
   ]
   return (
