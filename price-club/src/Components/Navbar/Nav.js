@@ -15,9 +15,9 @@ const Nav = () => {
       
         <nav className='bg-purple-200 w-full'> 
             <div onClick={() => setOpen(!open)} className="h-6 w-6  md:hidden" >
-            {
-                open ? <XMarkIcon /> : <Bars3Icon />
-            }
+                    {
+                        open ? <XMarkIcon /> : <Bars3Icon />
+                    }
             </div>
             <ul className={`bg-purple-200 w-full md:flex justify-center absolute md:static duration-500 ${open ? 'top-6' : 'top-[-120px]'}`}>
                 {

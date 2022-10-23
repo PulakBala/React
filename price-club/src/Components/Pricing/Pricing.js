@@ -2,22 +2,25 @@ import React from 'react';
 import PricingOptions from '../PricingOptions/PricingOptions';
 
 const Pricing = () => {
-    const pricingOptions = [
+    const pricingOptions = [ 
         {id: 1, name: 'Free', price: 0, features:[
+            'Everything on Features',
              'Awesome',
              'Extra Feature',
              'unnecessary Feature',
              'Hudai feature',
              'Ajaira Geature'
         ]},
-        {id: 2, name: 'Medium', price: 9.99 , eatures:[
+        {id: 2, name: 'Medium', price: 9.99 , features:[
+            'Everything on Medium',
             'Awesome',
             'Extra Feature',
             'unnecessary Feature',
             'Hudai feature',
             'Ajaira Geature'
        ]},
-        {id: 3, name: 'Premium', price: 19.99, eatures:[
+        {id: 3, name: 'Premium', price: 19.99, features:[
+            'Everything on Premium',
             'Awesome',
             'Extra Feature',
             'unnecessary Feature',
@@ -29,7 +32,7 @@ const Pricing = () => {
     return (
         <div>
             <h2 className='text-5xl font-bold bg-indigo-300 p-12 text-white'>Best Deal of the Town</h2>
-            <div className='grid grid-cols-3 gap-3'>
+            <div className='grid grid-cols-3 gap-3 '>
             {
                 pricingOptions.map(option => <PricingOptions
                     key={option.id}
