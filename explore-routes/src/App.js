@@ -4,12 +4,24 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
+import Main from './Layout/Main';
+import Friends from './Components/Friends/Friends';
 
 function App() {
   const router = createBrowserRouter([
-      {path: '/', element: <div>This is Defalut page</div>},
-      {path: '/home', element: <Home></Home>},
-      {path: 'about', element: <About></About>},
+    {
+      path:'/', 
+      element: <Main></Main>,
+      children: [
+        {path: '/home', element: <Home></Home>},
+        {path: 'about', element: <About></About>},
+        {path:'/friends',
+        loader: async() => {
+          return fetch('https://jsonplaceholder.typicode.com/users');
+        } ,
+         element: <Friends></Friends>}
+      ]
+    },
       {path: 'contact', element: <Contact></Contact>}
   ]);
   return (
