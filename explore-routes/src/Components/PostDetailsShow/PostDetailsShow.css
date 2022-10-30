@@ -1,0 +1,13 @@
+.post-detials-show{
+    width: 50%;
+    height: auto;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 0;
+   
+}
