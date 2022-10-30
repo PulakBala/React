@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
 
 function App() {
   const router = createBrowserRouter([
       {path: '/', element: <div>This is Defalut page</div>},
-      {path: '/home', element: <div>Home Page</div>},
-      {path: 'about', element: <div>This is About Page</div>}
+      {path: '/home', element: <Home></Home>},
+      {path: 'about', element: <About></About>}
   ]);
   return (
     <div className="App">
