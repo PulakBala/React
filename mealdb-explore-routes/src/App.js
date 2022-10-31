@@ -12,7 +12,11 @@ function App() {
      children: [
       {path: '/home', element: <Home></Home>},
       {path: '/about', element: <About></About>},
-      {path: '/category', element: <Category></Category>}
+      {path: '/category',
+       loader: async () =>{
+        return fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772')
+       },
+       element: <Category></Category>}
      ]
     },
     
